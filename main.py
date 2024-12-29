@@ -127,27 +127,39 @@
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
 
-vendas = [
-    {"categoria": "eletrônicos", "valor": 1200},
-    {"categoria": "livros", "valor": 200},
-    {"categoria": "eletrônicos", "valor": 800}
-]
+# vendas = [
+#     {"categoria": "eletrônicos", "valor": 1200},
+#     {"categoria": "livros", "valor": 200},
+#     {"categoria": "eletrônicos", "valor": 800}
+# ]
 
-total_por_categoria = {}
-for venda in vendas:
-    categoria = venda["categoria"]
-    valor = venda["valor"]
-    if categoria in total_por_categoria:
-        total_por_categoria[categoria] += valor
-    else:
-        total_por_categoria[categoria] = valor
+# total_por_categoria = {}
+# for venda in vendas:
+#     categoria = venda["categoria"]
+#     valor = venda["valor"]
+#     if categoria in total_por_categoria:
+#         total_por_categoria[categoria] += valor
+#     else:
+#         total_por_categoria[categoria] = valor
 
-print(total_por_categoria)
+# print(total_por_categoria)
 
 ### Exercícios com WHILE
 
 ### Exercício 11. Leitura de Dados até Flag
 # Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
+
+dados = []  # Lista para armazenar os valores
+entrada = ""  # Variável para armazenar a entrada do usuário
+
+while entrada.lower() != "sair":  # Laço continua até o usuário digitar "sair"
+    entrada = input("Digite um valor (ou 'sair' para terminar): ")
+    if entrada.lower() != "sair":  # Se não for "sair", adiciona à lista
+        dados.append(entrada)  # Aqui deve haver indentação
+
+print("Valores digitados:", dados)
+
+
 
 ### Exercício 12. Validação de Entrada
 # Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
