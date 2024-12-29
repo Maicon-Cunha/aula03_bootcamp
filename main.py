@@ -3,7 +3,7 @@
 # quantidade = 10
 # preco = 20
 
-# if quantidade < 0 or preco < 0: 
+# if quantidade < 0 and preco < 0: 
 #     print("Insira um valor positivo")
 # else:
 #     print(f"A quantidade é de {quantidade} unidades ao valor unitário de {preco} reais, totalizando {quantidade * preco} reais.")
@@ -14,18 +14,28 @@
 # Escreva um programa que verifique esses campos e imprima "Dados válidos" se ambos 
 # forem positivos ou "Dados inválidos" caso contrário.
 
-quantidade = 10
-preco = -20
+# quantidade = 10
+# preco = -20
 
-if quantidade < 0 or preco < 0: 
-    print("Dados Inválidos")
-else:
-    print("Dados Válidos")
+# if quantidade < 0 and preco < 0: 
+#     print("Dados Inválidos")
+# else:
+#     print("Dados Válidos")
 
 ### Exercício 2: Classificação de Dados de Sensor
 # Imagine que você está trabalhando com dados de sensores IoT. 
 # Os dados incluem medições de temperatura. Você precisa classificar cada leitura 
 # como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
+
+leitura = 21
+
+if leitura < 20:
+    print("baixa")
+elif leitura < 50:
+    print("Normal")
+else:
+    print("Alta")
+
 
 ### Exercício 3: Filtragem de Logs por Severidade
 # Você está analisando logs de uma aplicação e precisa filtrar mensagens 
@@ -47,6 +57,8 @@ else:
 
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
+
+
 
 ### Exercício 7. Normalização de Dados
 # Objetivo:** Normalizar uma lista de números para que fiquem na escala de 0 a 1.
